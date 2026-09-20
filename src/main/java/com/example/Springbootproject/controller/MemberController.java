@@ -30,19 +30,18 @@ public class MemberController {
         return memberServices.getAllMembers();
     }
 
-    // Get Member By ID
     @GetMapping("/{id}")
     public Member getMemberById(@PathVariable Long id) {
         return memberServices.getMemberById(id);
     }
 
-    // Add Member
+    
     @PostMapping
     public Member addMember(@RequestBody Member member) {
         return memberServices.addMember(member);
     }
 
-    // Update Member
+    
     @PutMapping("/{id}")
     public Member updateMember(
             @PathVariable Long id,

@@ -15,7 +15,7 @@ import com.example.Springbootproject.model.Book;
 import com.example.Springbootproject.services.BookServices;
 
 @RestController
-@RequestMapping("/books")
+@RequestMapping("/api/books")
 public class BookController {
 
     private final BookServices bookServices;
